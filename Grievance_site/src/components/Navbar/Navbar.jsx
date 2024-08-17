@@ -6,12 +6,12 @@ const Navbar = () => {
     <div className='nav-bar'>
         <div className='logo'>
             <h3>
-                <Link to="/">GRIEVANCE SITE</Link>
+                <Link to="/home">GRIEVANCE SITE</Link>
             </h3>
 
         </div>
         <div className='navbar-pages'>
-            <Link to="/"> Home</Link>
+            <Link to="/home"> Home</Link>
             <Link to="/form"> Form</Link>
             <Link to="/profile"> Profile</Link>
         </div>
