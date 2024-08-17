@@ -1,0 +1,44 @@
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C3E50;
+    padding: 10px 20px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo h3 a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-pages a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar-pages a:hover {
+    color: #E3F2FD;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-pages {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-pages a {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+}

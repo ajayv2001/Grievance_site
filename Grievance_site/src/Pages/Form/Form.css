@@ -1,0 +1,107 @@
+.form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+select[name="grievance-type"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+
+textarea[name="description"] {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .form {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    select[name="grievance-type"],
+    textarea[name="description"],
+    input[type="file"],
+    button[type="submit"] {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    select[name="grievance-type"],
+    textarea[name="description"],
+    input[type="file"],
+    button[type="submit"] {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}

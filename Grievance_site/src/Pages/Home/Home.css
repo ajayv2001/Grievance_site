@@ -1,0 +1,139 @@
+
+.home-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.title-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title-overlay h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #fff;
+}
+
+.title-overlay p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    
+}
+
+/* Home  card css */
+
+.card {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .card h2 {
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .step {
+    flex: 1;
+    padding: 0 10px;
+  }
+  
+  .step h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .step p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .step-divider {
+    width: 1px;
+    height: 60px;
+    background-color: #e0e0e0;
+  }
+  
+  .card button {
+    margin-top: 30px;
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .card button:hover {
+    background-color: #554edc;
+  }
+  
+
+  @media (max-width: 768px) {
+    .steps-container {
+      flex-direction: column;
+    }
+  
+    .step-divider {
+      width: 60%;
+      height: 1px;
+      margin: 20px auto;
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .card {
+      padding: 20px;
+      box-shadow: none;
+    }
+  
+    .step h3 {
+      font-size: 20px;
+    }
+  
+    .step p {
+      font-size: 14px;
+    }
+  
+    .card button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+
+  .home-card{
+    padding:5rem 2rem ;
+  }
