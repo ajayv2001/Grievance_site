@@ -12,7 +12,7 @@ Express for the backend, and MySQL for the database.
 2. Install Dependencies
    *frontend
    cd Grievance_site
-   npm i
+   *npm install*
    *Backend
    cd server
    npm install
