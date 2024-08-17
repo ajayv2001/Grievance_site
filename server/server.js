@@ -19,7 +19,7 @@ const db = mysql.createConnection({
   database: "signup",
 });
 
-app.post('/sign-in', (req, res) => {
+app.post('/', (req, res) => {
   const sql = "INSERT INTO login(`name`, `email`, `password`) VALUES(?)";
   bcrypt.hash(req.body.password.toString(), salt, (err, hash) => {
     if (err) return res.json({ Error: "Error hashing password" });

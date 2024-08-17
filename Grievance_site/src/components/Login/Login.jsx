@@ -14,7 +14,7 @@ const Login = () => {
         axios.post("http://localhost:8081/log-in", values)
           .then(res =>{
             if(res.data.Status ==="Success"){
-              toLogin('/')
+              toLogin('/home')
             }else{
               alert(res.data.Error)
             }
@@ -38,7 +38,7 @@ const Login = () => {
                     />
                 </div>
                 <button type="submit" className="btn">Log In</button>
-                <Link to="/sign-in">Don't have an account</Link>
+                <Link to="/">Don't have an account</Link>
                 
             </form>
         </div>

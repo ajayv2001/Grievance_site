@@ -57,3 +57,20 @@
 .btn:hover {
     background: linear-gradient(to right, #ff4b2b, #ff416c);
 }
+
+.sign-btn{
+    width: 100%;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    border: none;
+    padding: 15px;
+   
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 16px;
+}
+
+.sign-btn:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+}

@@ -1,10 +1,13 @@
 import React from 'react';
 import "./Home.css";
 import HomeCard from './Home_card';
+import Navbar from '../../components/Navbar/Navbar';
+
 
 const Home = () => {
   return (
   <>
+    <Navbar />
     <div className="home-container">
         <img className='img' src="\src\assets\pexels-julia-larson-6456305.jpg" alt="Grievance Portal" />
         <div className="title-overlay">

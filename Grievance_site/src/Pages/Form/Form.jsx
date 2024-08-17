@@ -2,6 +2,7 @@ import React ,{useState} from 'react';
 import "./Form.css";
 import axios from 'axios';
 import Swal from 'sweetalert2'
+import Navbar from '../../components/Navbar/Navbar';
 const Form = () => {
   const [grievanceType, setGrievanceType] = useState('');
   const [description, setDescription] = useState('');
@@ -36,6 +37,8 @@ const Form = () => {
 
 
   return (
+    <>
+    <Navbar/>
     <div className='form'>
       <h1>Get Started with Your Application</h1>
       <form onSubmit={handleSubmit}>
@@ -88,6 +91,7 @@ const Form = () => {
         </button>
       </form>
     </div>
+    </>
   );
 }
 

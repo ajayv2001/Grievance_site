@@ -11,6 +11,10 @@ export const Signin = () => {
   });
   const toLogin = useNavigate();
 
+  const handleNavigate = () => {
+    toLogin('/log-in');
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault();
     axios.post("http://localhost:8081/sign-in", values)
@@ -24,6 +28,7 @@ export const Signin = () => {
         }
       })
       .catch(err => console.log(err));
+
   }
 
  
@@ -46,6 +51,7 @@ export const Signin = () => {
               onChange={a => setValues({ ...values, password: a.target.value })} />
           </div>
           <button onClick={handleSubmit} type="submit" className="btn">Sign in</button>
+          <button onClick={handleNavigate} className="sign-btn">Go to Login</button>
         </form>
       </div>
     </div>
