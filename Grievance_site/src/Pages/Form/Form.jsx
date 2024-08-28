@@ -23,7 +23,7 @@ const Form = () => {
     const email = localStorage.getItem('email');
 
     try {
-      await axios.post('http://localhost:8081/form', { name, email });
+      await axios.post('http://localhost:8080/form', { name, email });
       Swal.fire({
         title: "Success!",
         text: "Your grievance has been successfully submitted !!. We will review it shortly.",

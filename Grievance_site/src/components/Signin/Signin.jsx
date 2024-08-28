@@ -17,7 +17,7 @@ export const Signin = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post("http://localhost:8081/sign-in", values)
+    axios.post("http://localhost:8080/", values)
       .then(res =>{
         if(res.data.Status ==="Success"){
           localStorage.setItem('name', values.name);
