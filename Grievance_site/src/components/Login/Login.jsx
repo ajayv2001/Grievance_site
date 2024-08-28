@@ -11,7 +11,7 @@ const Login = () => {
     
       const handleSubmit = (event) => {
         event.preventDefault();
-        axios.post("http://localhost:8080/log-in", values)
+        axios.post("https://grievance-site-backend.onrender.com/log-in", values)
           .then(res =>{
             if(res.data.Status ==="Success"){
               toLogin('/home')
