@@ -10,7 +10,7 @@ const Home = () => {
   <>
     <Navbar />
     <div className="home-container">
-        <img className='img' src="\assets\pexels-julia-larson-6456305.jpg" alt="Grievance Portal" />
+        <img className='img' src=".\src\assets\pexels-julia-larson-6456305.jpg" alt="Grievance Portal" />
         <div className="title-overlay">
             <h1>Welcome to Our Grievance Portal</h1>
             <p>Your Voice Matters</p>
