@@ -10,7 +10,7 @@ const Profile = () => {
     <>
     <Navbar/>
     <div className="profile-container">
-      <img src=".\public\profile.png" alt="Profile" className="profile-image" />
+      <img src="./profile.png" alt="Profile" className="profile-image" />
       <h1 className="profile-name"> Name: {name}</h1>
       <p className="profile-email">E-mail: {email}</p>
     </div>
