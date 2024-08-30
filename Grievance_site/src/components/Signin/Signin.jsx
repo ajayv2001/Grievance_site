@@ -22,7 +22,7 @@ export const Signin = () => {
         if(res.data.Status ==="Success"){
           localStorage.setItem('name', values.name);
           localStorage.setItem('email', values.email);
-          toLogin('/log-in')
+          handleNavigate('/log-in')
         }else{
           alert("Error")
         }

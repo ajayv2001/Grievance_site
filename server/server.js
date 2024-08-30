@@ -12,9 +12,9 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use(cookieParser());
-// 4q1VoaP1HiGvdMkm
 
-// MongoDB Atlas connection
+
+
 const uri = "mongodb+srv://loki20012002:4q1VoaP1HiGvdMkm@cluster0.anaqt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"; // Replace with your actual MongoDB Atlas connection string
 mongoose.connect(uri, {
   useNewUrlParser: true,
